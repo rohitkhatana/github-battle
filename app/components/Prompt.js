@@ -32,9 +32,10 @@ var Prompt = function(props) {
 }
 
 Prompt.propTypes =  {
-  header: PropTypes.string.isRequired,
-  onUpdateUser: PropTypes.func.isRequired,
-  onSubmitUser: PropTypes.func.isRequired,
-  username: PropTypes.string.isRequired
-}
+    header: PropTypes.string.isRequired,
+    onUpdateUser: PropTypes.func.isRequired,
+    onSubmitUser: PropTypes.func.isRequired,
+    username: PropTypes.string.isRequired
+  }
+  
 module.exports = Prompt;

@@ -23,12 +23,21 @@ var ConfirmBattleContainer = React.createClass({
         });
       }.bind(this));
   },
+  handleInitiatBattle: function() {
+    console.log('called');
+    this.context.router.push({
+      pathname: '/results',
+      state: {
+        playerInfo: this.state.playerInfo
+      }
+    });
+  },
   render: function() {
-      console.log('before mount');
       return (
         <ConfirmBattle
           isLoading={this.state.isLoading}
           playerInfo={this.state.playerInfo}
+          onInitiatBattle={this.handleInitiatBattle}
          />)
   }
 });
